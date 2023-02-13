@@ -21,6 +21,13 @@
   ## [Installation](#table-of-contents)
   To install the program, first clone the repo to your local environment. You can then install the depedencies with the following command:
   `npm install`
+
+  You must also seed your database. To initialize the database use the following: 
+  `mysql -u root -p < db/schema.sql`
+  Note: you will need your .env file to include your password, database, and user. This is not provided with the repo
+  After you have intiailzed your database, you can seed your data with the following command:
+  `npm run seed`
+
   Make sure that you are on node version 16 before starting your server. You can start your server with the following command:
   `npm start`
 

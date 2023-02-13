@@ -3,7 +3,8 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
 class Tag extends Model {}
-
+//tag contains the objects of id and tag name
+//tag does not reference and other models
 Tag.init(
   {
     id: {

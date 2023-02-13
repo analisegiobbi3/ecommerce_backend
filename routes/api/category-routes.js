@@ -3,6 +3,7 @@ const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
 
+//get request for grabbing all categories, including their products 
 router.get('/', async (req, res) => {
   try {
     const categoryData = await Category.findAll({include: [{ model: Product, attributes: ['id', 'product_name', 'price', 'stock', 'category_id'] }]});
@@ -12,6 +13,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+//get request for categories based on id. This will only grab the category with the id you requested
 router.get('/:id', async (req, res) => {
   try { 
     const categoryData = await Category.findByPk(req.params.id, {
@@ -26,7 +28,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-
+//allow you to post new categories to the dataset
 router.post('/', async (req, res) => {
   try {
     const categoryData = await Category.create(req.body.category_name);
@@ -36,6 +38,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+//allows you to update categories in the dataset based on id
 router.put('/:id', async (req, res) => {
   try {
     const categoryData = await Category.update(
@@ -54,6 +57,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+//allows you to delete categories in the dataset based on id
 router.delete('/:id', async(req, res) => {
   try {
     const categoryData = await Category.destroy({

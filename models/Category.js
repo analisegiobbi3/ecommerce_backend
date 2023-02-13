@@ -4,6 +4,7 @@ const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 
+//catgefory includes the objects of id and category name. There are no references
 Category.init(
   {
     id: {

@@ -4,6 +4,8 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+//product tag includes the objects of id, product_id, and tag_id
+//product_id references product and tag_id references tag
 ProductTag.init(
   {
     id: {
@@ -12,7 +14,7 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    produce_id: {
+    product_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'product',

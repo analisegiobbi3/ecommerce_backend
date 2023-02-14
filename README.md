@@ -39,22 +39,30 @@
   `localhost:3001/api/tags/`
   `localhost:3001/api/products/`
 
+  ![Get all](./Assets/Screen%20Shot%202023-02-14%20at%2011.46.51%20AM.png)
+
   GET requests for 1 item can be condicuted with the following. Note, the number is the id of the object you wish to request:
   `localhost:3001/api/categories/2`
   `localhost:3001/api/tags/2`
   `localhost:3001/api/products/2`
 
+  ![Get one](./Assets/Screen%20Shot%202023-02-14%20at%2011.47.04%20AM.png)
+
   POST requests will create a new object. An id will be automatically assigned to these posts:
   //add screenshots here
 
+  ![Post request](./Assets/Screen%20Shot%202023-02-14%20at%2011.47.19%20AM.png)
+
   PUT request will allow you to update an object
+
+  ![Put request](./Assets/Screen%20Shot%202023-02-14%20at%2011.47.31%20AM.png)
 
   Finally, DELETE requests will allow you to remove and object. Note, the number is the id of the object you wish to delete:
   `localhost:3001/api/categories/2`
   `localhost:3001/api/tags/2`
   `localhost:3001/api/products/2`
 
-
+  ![Delete Request](./Assets/Screen%20Shot%202023-02-14%20at%2011.47.42%20AM.png)
 
 
   ## [License](#table-of-contents)

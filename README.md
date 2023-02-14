@@ -61,6 +61,9 @@
   `localhost:3001/api/categories/2`
   `localhost:3001/api/tags/2`
   `localhost:3001/api/products/2`
+  
+  
+https://user-images.githubusercontent.com/59839160/218802943-ca5dc385-2429-4375-9da9-6d71fd2d520e.mp4
 
   ![Delete Request](./Assets/Screen%20Shot%202023-02-14%20at%2011.47.42%20AM.png)
 
